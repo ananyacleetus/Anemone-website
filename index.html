@@ -33,6 +33,18 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+        <script type="text/javascript" charset="utf-8" src="//downloads.mailchimp.com/js/signup-forms/popup/1.0/popup.js"></script>
+<script src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+<script> function openPOPUP(){ 
+ require(["mojo/signup-forms/Loader"], function (L) { L.start({"baseUrl": "mc.us18.list-manage.com", "uuid": "YOUR UUID", "lid": "YOUR LID"})}); 
+ document.cookie = "MCPopupClosed=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC"; 
+ document.cookie = "MCPopupSubscribed=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+ }
+</script>
+
+
     </head>
     <body>
 
@@ -590,7 +602,7 @@
                 <div class="input-group subscrib_form">
                     <input type="text" class="form-control" placeholder="Enter Email">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">Subscribe</button>
+                        <button class="btn btn-default" onclick="openPOPUP();" type="button">Subscribe</button>
                     </span>
                 </div>
             </div>
@@ -721,7 +733,7 @@
                                     </div>
                                     <div class="media-body">
                                         <h4>Send Your Message</h4>
-                                        <h5>ananya@anemone.com</h5>
+                                        <h5>ananya@anemoneapp.io</h5>
                                         <h5>ananyacleetus@gmail.com</h5>
                                     </div>
                                 </div>
@@ -735,7 +747,7 @@
                                     </div>
                                 </div>
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.facebook.com/pg/anemoneapp/"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li></li>
                                 </ul>
                             </div>
@@ -752,7 +764,7 @@
                 <div class="pull-left">
                     <h4><p>Copyright @2018 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p> </h4>
                 </div>
-                <div class="pull-right">
+                <!-- <div class="pull-right">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -760,7 +772,7 @@
                         <li><a href="#">Terms</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </footer>
         <!--================End Footer Area =================-->
@@ -801,5 +813,7 @@
 
         <script src="theme/js/video_player.js"></script>
         <script src="theme/js/theme.js"></script>
+
+
     </body>
 </html>
