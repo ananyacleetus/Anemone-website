@@ -1230,6 +1230,10 @@ body, p, h1, h2, h3, h4, h5, h6 {
   padding: 100px 0px;
 }
 
+.map_area {
+  background: #f1f1f1;
+}
+
 .purple_feature .right_side_feature .media .media-left i {
   color: #a640d0;
 }
